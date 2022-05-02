@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model RPGCharacterBuilderMVC.Models.Armor.ArmorCreateModel
+
+<h1>Create</h1>
+
+<div>
+    <h4>Armor</h4>
+    <hr />
+
+<div class="container">
+    <form method="post" asp-action="Create">
+        <div class="form-group">
+            <label for="CharacterId">Character Id</label>
+            <input type="number" class="form-control" name="Character Id" placeholder="i.e. 1" />
+        </div>
+        <div class="form-group">
+            <label for="Name">Armor Name</label>
+            <input type="text" class="form-control" name="Name" placeholder="i.e. Godskin Helm" />
+        </div>
+        <div class="form-group">
+            <label for="Type">Armor Type</label>
+            <input type="text" class="form-control" name="Armor Type" placeholder="i.e. Head, Chest, Arms, Legs" />
+        </div>
+        <div class="form-group">
+            <label for="DamageNegation">Damage Negation</label>
+            <input type="number" class="form-control" name="Damage Negation" placeholder="i.e. 15" />
+        </div>
+        <div class="form-group">
+            <label for="Weight">Armor Weight</label>
+            <input type="number" class="form-control" name="Armor Weight" placeholder="i.e. 20" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-2">Create Armor</button>
+    </form>
+</div>

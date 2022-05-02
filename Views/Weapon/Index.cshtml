@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<RPGCharacterBuilderMVC.Models.Weapon.WeaponIndexModel>
+
+<h1 class="text-center">All Weapons</h1>
+<a href="/weapon/create" class="text-primary">Create Weapon</a>
+
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Character Id</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var weapon in Model)
+    {
+        <tr>
+            <td>@weapon.Id</td>
+            <td>@weapon.CharacterId</td>
+            <td>@weapon.Name</td>
+            <td>@weapon.Type</td>
+        </tr>
+    }
+    </tbody>
+</table>

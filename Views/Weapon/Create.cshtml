@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model RPGCharacterBuilderMVC.Models.Weapon.WeaponCreateModel
+
+<h1>Create</h1>
+
+<div>
+    <h4>Weapon</h4>
+    <hr />
+
+<div class="container">
+    <form method="post" asp-action="Create">
+        <div class="form-group">
+            <label for="CharacterId">Character Id</label>
+            <input type="number" class="form-control" name="Character Id" placeholder="i.e. 1" />
+        </div>
+        <div class="form-group">
+            <label for="Name">Weapon Name</label>
+            <input type="text" class="form-control" name="Name" placeholder="i.e. Rivers Of Blood" />
+        </div>
+        <div class="form-group">
+            <label for="Type">Weapon Type</label>
+            <input type="text" class="form-control" name="Weapon Type" placeholder="i.e. Greatswords, Daggers, Axes...etc." />
+        </div>
+        <div class="form-group">
+            <label for="DamageIncreasedBy">Damage Dealt</label>
+            <input type="number" class="form-control" name="Damage Dealt" placeholder="i.e. 55" />
+        </div>
+        <div class="form-group">
+            <label for="MagicDamage">Magic Damage Dealt</label>
+            <input type="number" class="form-control" name="Magic Damage Dealt" placeholder="i.e. 48" />
+        </div>
+        <div class="form-group">
+            <label for="Weight">Weapon Weight</label>
+            <input type="number" class="form-control" name="Weapon Weight" placeholder="i.e. 8" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-2">Create Armor</button>
+    </form>
+</div>
