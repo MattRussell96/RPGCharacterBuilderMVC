@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using RPGCharacterBuilderMVC.Models.Armor;
 using RPGCharacterBuilderMVC.Models.Weapon;
 using RPGCharacterBuilderMVC.Models.MagicItem;
+using RPGCharacterBuilderMVC.Models.Character;
 
 #nullable disable
 
@@ -141,5 +142,9 @@ namespace RPGCharacterBuilderMVC.Data
         public DbSet<RPGCharacterBuilderMVC.Models.MagicItem.MagicItemDetailModel> MagicItemDetailModel { get; set; }
 
         public DbSet<RPGCharacterBuilderMVC.Models.MagicItem.MagicItemEditModel> MagicItemEditModel { get; set; }
+
+        public DbSet<RPGCharacterBuilderMVC.Models.Character.CharacterDetailModel> CharacterDetailModel { get; set; }
+
+        public DbSet<RPGCharacterBuilderMVC.Models.Character.CharacterEditModel> CharacterEditModel { get; set; }
     }
 }

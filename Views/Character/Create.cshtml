@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model RPGCharacterBuilderMVC.Models.Character.CharacterCreateModel
+
+<h1>Create</h1>
+
+<div>
+    <h4>Character</h4>
+    <hr />
+
+<div class="container">
+    <form method="post" asp-action="Create">
+        <div class="form-group">
+            <label for="CharacterId">Character Id</label>
+            <input type="number" class="form-control" name="Character Id" placeholder="i.e. 1" />
+        </div>
+        <div class="form-group">
+            <label for="Name">Character Name</label>
+            <input type="text" class="form-control" name="Name" placeholder="i.e. John Doe" />
+        </div>
+        <div class="form-group">
+            <label for="Health">Character Health</label>
+            <input type="number" class="form-control" name="Character Health" placeholder="i.e. 80" />
+        </div>
+        <div class="form-group">
+            <label for="Strength">Character Strength</label>
+            <input type="number" class="form-control" name="Character Strength" placeholder="i.e. 65" />
+        </div>
+        <div class="form-group">
+            <label for="Stamina">Character Stamina</label>
+            <input type="number" class="form-control" name="Character Stamina" placeholder="i.e. 70" />
+        </div>
+        <div class="form-group">
+            <label for="Speed">Character Speed</label>
+            <input type="number" class="form-control" name="Character Speed" placeholder="i.e. 50" />
+        </div>
+        <div class="form-group">
+            <label for="Mana">Character Mana</label>
+            <input type="number" class="form-control" name="Character Mana" placeholder="i.e. 90" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-2">Create Character</button>
+    </form>
+</div>
